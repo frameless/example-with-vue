@@ -1,0 +1,15 @@
+:root {
+  --utrecht-button-min-inline-size: 100%;
+  --utrecht-space-around: 1;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+img {
+  max-inline-size: 100%;
+}
