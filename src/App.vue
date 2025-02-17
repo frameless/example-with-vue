@@ -37,7 +37,7 @@ const selectCategory = (category: string) => {
   <div class="container">
     <aside class="sidebar">
       <Button
-        v-for="(content, key) in contentData"
+        v-for="(_content, key) in contentData"
         :key="key"
         @click="selectCategory(key)"
         :appearance="selectedCategory === key ? 'secondary-action-button' : 'primary-action-button'"
@@ -49,7 +49,7 @@ const selectCategory = (category: string) => {
     <!-- Main Content Area -->
     <main class="content">
       <section v-if="selectedCategory">
-        <HtmlContent v-html="contentData[selectedCategory]" />
+        <HtmlContent v-html="contentData[selectedCategory as keyof typeof contentData]" />
       </section>
     </main>
   </div>
