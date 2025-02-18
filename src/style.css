@@ -1,15 +1,18 @@
 :root {
   --utrecht-button-min-inline-size: 100%;
+  --utrecht-page-footer-max-inline-size: 100%;
   --utrecht-space-around: 1;
   text-rendering: optimizeLegibility;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
+.utrecht-page-footer {
+  --utrecht-link-color: #fff;
 }
 
 img {
   max-inline-size: 100%;
+}
+
+#app {
+  inline-size: 100%;
+  block-size: 100%;
 }
